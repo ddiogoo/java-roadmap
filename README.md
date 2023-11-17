@@ -2,8 +2,8 @@
 
 ## Programação Orientada a Objetos
 
-- Um objeto (também chamado de instância) representa qualquer entidade no mundo real (Carro, Pessoa, Bicicleta, ATM, etc.);
-- Uma instância possui comportamento e propriedades, definimos o compotamento de uma instância pelos métodos (funções que uma instância possui);
+- Um objeto (também chamado de instância) representa qualquer entidade no mundo real;
+- Uma instância possui comportamento e propriedades.
 
 |               Programação Procedural               |                                  POO                                 |
 |:--------------------------------------------------:|:--------------------------------------------------------------------:|
@@ -15,13 +15,9 @@
 | Exemplos: Pascal, C, FORTRAN, etc.                 | Exemplos: Java, C#, Python, C++, etc.                                |
 
 - Objetos possuem 2 características:
+
   - Propriedades ou estados;
   - Comportamento ou métodos.
-
-- Exemplos:
-  - Cachorro é um objeto por que:
-    - Propriedades: Idade, cor, peso, etc;
-    - Comportamento: Latir, comer, dormir, etc.
 
 - As classes são modelos para criação de objetos, ou seja, a partir de uma classe X podemos criar várias instâncias de X. Vamos supor que você esteja responsável por confeitar um bolo e precisa ser estrelas de chocolate ao redor, o molde que você vai usar para fazer é a nossa Classe, enquanto as estrelas que serão formadas por você são os objetos;
 
@@ -56,28 +52,31 @@ No exemplo dado acima, utilizando polimorfismo podemos implementar o método cal
 ## O que é Java?
 
 - Plataforma independente de linguagem;
-- Linguagem orientada a objetos (Abstração, Encapsulamento, Herança e Polimorfismo);
-- Portabilidade: WORA (Write Once, Run Anywhere | Escreva uma vez, rode onde quiser);
-- Três principais componentes do Java: JVM, JRE, JDK:
+- Portabilidade: WORA [Write Once, Run Anywhere (Escreva uma vez, rode onde quiser)];
+- Três principais componentes do Java: JVM, JRE, JDK.
 
 ![Componentes do Java](./.github/jjj.png)
 
 ### JVM
 
 - Java Virtual Machine:
+
   - Máquina Abstrata: "Abstrata" significa que ela não existe fisicamente;
-  - ```Programa em Java``` = ```compilador``` => ```Byte Code``` = ```JVM``` => ```Código de Máquina``` = ```CPU``` => ```Saída```;
-  - Acima está o processo de transformação do programa Java em código de máquina, a JVM é importante nesse processo pois ela garante a portabilidade da linguagem, pode rodar em qualquer lugar;
-  - Por que? Quando o código Java é compilado, não obtemos o código de máquina diretamente, o que podemos é o ByteCode, este ByteCode pode ser executado pela JVM e assim obtems o código de máquina;
-  - Então a JVM é uma plataforma dependente. Por que? Pois se temos um MAC OS, temos uma JVM do MAC OS, se temos um Linux, temos JVM do Linux e se temos um Windows, nós temos a JVM do Windows. Java é independente pois, se usarmos os exemplos anteriores, não existe um Java para cada tipo de Sistema Operacional, o Java é único e independente de Sistema Operacional ou qualquer outro tipo de plataforma;
-  - O ByteCode é a entrada para JVM;
+  - Processo de transformação de ```.java``` para Código de Máquina:
+
+    - ```Programa em Java``` = ```compilador``` => ```Byte Code``` = ```JVM``` => ```Código de Máquina``` = ```CPU``` => ```Saída```;
+    - A JVM é importante nesse processo pois ela garante a portabilidade da linguagem, pode rodar em qualquer lugar;
+    - Quando o código Java é compilado, não obtemos o código de máquina diretamente, o que obtemos é o ByteCode, o mesmo pode ser executado pela JVM e assim obtems o código de máquina;
+  
+  - Então a JVM é uma plataforma dependente, pois se temos um MAC OS, temos uma JVM do MAC OS, se temos um Linux, temos JVM do Linux e se temos um Windows, nós temos a JVM do Windows.
+  - Java é independente pois, se usarmos os exemplos anteriores, não existe um Java para cada tipo de Sistema Operacional, o Java é único e independente de Sistema Operacional ou qualquer outro tipo de plataforma;
   - A JVM possui JIT Compiler (Just in Time Compiler), ou seja, em vez do compilador compilar todo o programa de uma só vez, ele compila somente as partes necessárias durante a execução do programa;
   - Mas como isso ajuda na portabilidade do Java? Com um ByteCode em mãos, conseguimos pegar qualquer JVM e executar esse ByteCode, ou seja, um ByteCode produzido no Android pode ser executado por qualquer JVM, seja em outro dispositivo móvel, computador, ou seja, qualquer JVM;
 
 ### Como compilar um arquivo Java?
 
 ```shell
-java FileName.java
+javac FileName.java
 ```
 
 - Ao executarmos o comando acima, obtemos um arquivo chamado ```FileName.class```, que é o ByteCode.
