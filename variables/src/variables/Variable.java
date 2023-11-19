@@ -33,6 +33,11 @@ public class Variable {
 		e1 = e2;
 		System.out.println(e1 == e2);
 		System.out.println(e1.getEmpId() + " <-> " + e2.getEmpId());
+		
+		String str1 = "Diogo Martins de Assis";
+		System.out.println(str1);
+		changeStringValue(str1);
+		System.out.println(str1);
 	}
 	
 	public static void changeEmployeeId(Employee e) {
@@ -45,5 +50,9 @@ public class Variable {
 	
 	public static void changeIntegerValue(Integer integerValue) {
 		integerValue = 22;
+	}
+	
+	public static void changeStringValue(String stringValue) {
+		stringValue = "Assis de Martins Diogo";
 	}
 }
