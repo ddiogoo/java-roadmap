@@ -20,6 +20,19 @@ public class Variable {
 		System.out.println(e.getEmpId());
 		System.out.println(intValue);
 		System.out.println(integerValue);
+		
+		System.out.println("compare two reference data types");
+		Employee e1 = new Employee();
+		Employee e2 = new Employee();
+		
+		e1.setEmpId(1);
+		e2.setEmpId(2);
+		System.out.println(e1 == e2);
+		System.out.println(e1.getEmpId() + " <-> " + e2.getEmpId());
+		
+		e1 = e2;
+		System.out.println(e1 == e2);
+		System.out.println(e1.getEmpId() + " <-> " + e2.getEmpId());
 	}
 	
 	public static void changeEmployeeId(Employee e) {
