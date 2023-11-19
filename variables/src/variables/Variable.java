@@ -9,5 +9,8 @@ public class Variable {
 		System.out.println(s1 == s2);
 		System.out.println(s1 == s3);
 		System.out.println(s2 == s3);
+		
+		Person e = new Employee();
+		System.out.println(e.profession());
 	}
 }
