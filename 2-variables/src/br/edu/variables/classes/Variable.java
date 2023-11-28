@@ -1,4 +1,4 @@
-package variables;
+package br.edu.variables.classes;
 
 import java.util.Random;
 

@@ -1,4 +1,4 @@
-package SalesDepartment;
+package br.edu.methods.in.depth.sales.department;
 
 public class Order {
 	

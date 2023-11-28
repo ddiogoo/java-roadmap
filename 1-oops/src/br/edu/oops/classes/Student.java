@@ -1,4 +1,4 @@
-package oops;
+package br.edu.oops.classes;
 
 import java.util.Arrays;
 
