@@ -3,6 +3,7 @@ import AbstractClass.LuxuryCar;
 import ConcreteClass.Person;
 import ConcreteClass.Rectangle;
 import ConcreteClass.Shape;
+import NestedClass.OuterClass;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -11,6 +12,9 @@ public class App {
 
         System.out.println("ABSTRACT CLASS");
         abstractClasses();
+
+        System.out.println("NESTED CLASS");
+        nestedClass();
     }
 
     private static void concreteClasses() {
@@ -28,5 +32,13 @@ public class App {
         audi.pressBreak();
         audi.pressClutch();
         audi.pressDualBreakSystem();
+    }
+
+    private static void nestedClass() {
+        OuterClass.NestedClass nestedClass = new OuterClass.NestedClass();
+        nestedClass.print();
+
+        OuterClass outerClass = new OuterClass();
+        outerClass.print();
     }
 }
