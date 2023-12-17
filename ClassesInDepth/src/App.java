@@ -4,7 +4,11 @@ import ConcreteClass.Shape;
 
 public class App {
     public static void main(String[] args) throws Exception {
+        System.out.println("CONCRETE CLASS");
         concreteClasses();
+
+        System.out.println("ABSTRACT CLASS");
+        abstractClasses();
     }
 
     private static void concreteClasses() {
@@ -13,5 +17,9 @@ public class App {
 
         Shape rectangle = new Rectangle();
         rectangle.computeArea();
+    }
+
+    private static void abstractClasses() {
+
     }
 }
