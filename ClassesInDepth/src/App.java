@@ -1,3 +1,5 @@
+import AbstractClass.Audi;
+import AbstractClass.LuxuryCar;
 import ConcreteClass.Person;
 import ConcreteClass.Rectangle;
 import ConcreteClass.Shape;
@@ -20,6 +22,11 @@ public class App {
     }
 
     private static void abstractClasses() {
-
+        LuxuryCar audi = new Audi(15);
+        System.out.println(audi.getMileage());
+        System.out.println(audi.getNumberOfWheels());
+        audi.pressBreak();
+        audi.pressClutch();
+        audi.pressDualBreakSystem();
     }
 }
