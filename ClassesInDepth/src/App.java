@@ -40,6 +40,7 @@ public class App {
 
         OuterClass outerClass = new OuterClass();
         outerClass.print();
+        outerClass.display();
 
         OuterClass.InnerClass innerClass = outerClass.new InnerClass();
         innerClass.print();
