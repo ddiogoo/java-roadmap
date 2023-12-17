@@ -44,5 +44,9 @@ public class App {
 
         OuterClass.InnerClass innerClass = outerClass.new InnerClass();
         innerClass.print();
+
+        OuterClass outerClass1 = new OuterClass();
+        OuterClass.InnerClass2 innerClass2 = outerClass1.new InnerClass2();
+        innerClass2.display();
     }
 }
