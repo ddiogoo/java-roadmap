@@ -40,5 +40,8 @@ public class App {
 
         OuterClass outerClass = new OuterClass();
         outerClass.print();
+
+        OuterClass.InnerClass innerClass = outerClass.new InnerClass();
+        innerClass.print();
     }
 }

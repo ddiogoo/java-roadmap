@@ -10,6 +10,12 @@ public class OuterClass {
         }
     }
 
+    public class InnerClass {
+        public void print() {
+            System.out.println(instanceVariable + classVariable);
+        }
+    }
+
     public void print() {
         System.out.println(instanceVariable);
     }
