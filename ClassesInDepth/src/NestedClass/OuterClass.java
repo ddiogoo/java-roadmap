@@ -16,6 +16,18 @@ public class OuterClass {
         }
     }
 
+    class InnerClass1 {
+        int innerClass1 = 3;
+    }
+
+    public class InnerClass2 extends InnerClass1 {
+        int innerClass2 = 4;
+
+        public void display() {
+            System.out.println(innerClass1 + innerClass2 + instanceVariable + classVariable);
+        }
+    }
+
     public void print() {
         System.out.println(instanceVariable);
     }
