@@ -23,4 +23,11 @@ public enum EnumSample {
         return comment;
     }
 
+    public static EnumSample getEnumFromValue(int value) {
+        for (EnumSample enumSample : EnumSample.values()) {
+            if (enumSample.getVal() == value)
+                return enumSample;
+        }
+        return null;
+    }
 }
