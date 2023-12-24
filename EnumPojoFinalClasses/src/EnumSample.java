@@ -14,4 +14,13 @@ public enum EnumSample {
         this.val = val;
         this.comment = comment;
     }
+
+    public int getVal() {
+        return val;
+    }
+
+    public String getComment() {
+        return comment;
+    }
+
 }
